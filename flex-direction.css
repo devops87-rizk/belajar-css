@@ -4,11 +4,15 @@ h1 {
 
 #container {
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
     background-color: #003049;
     width: 90%;
     height: 500px;
     margin: 0 auto;
     border: 5px solid #003049;
+    color: white;
 }
 
 #container div {
