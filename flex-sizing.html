@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Sizing</title>
+    <style>
+        main {
+            width: 80%;
+            height: 80vh;
+            margin: 0 auto;
+            border: 10px solid black;
+            display: flex;
+        }
+
+        .sidebar {
+            background-color: navy;
+            flex: 1 2 300px;
+        }
+
+        .content {
+            background-color: aqua;
+            flex: 2 1 600px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; font-size: 4rem;">Layout Example</h1>
+    <main>
+        <section class="sidebar"></section>
+        <section class="content"></section>
+        <section class="sidebar"></section>
+    </main>
+</body>
+</html>
