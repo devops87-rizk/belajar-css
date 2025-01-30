@@ -6,12 +6,12 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-end;
+    flex-wrap: nowrap;
+    align-items: center;
     /* align-content: center; */
     background-color: #003049;
     width: 90%;
-    height: 500px;
+    /* height: 500px; */
     margin: 0 auto;
     border: 5px solid #003049;
     color: white;
@@ -20,8 +20,15 @@ h1 {
 #container div {
     width: 400px;
     height: 200px;
+    /* flex-basis: 500px; */
 }
 
-div:nth-last-of-type(2) {
+div:nth-last-of-type(1) {
     align-self: flex-start;
+    flex-shrink: 2;
+}
+
+div:nth-last-of-type(5) {
+    align-self: flex-start;
+    flex-shrink: 2;
 }
