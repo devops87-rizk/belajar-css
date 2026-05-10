@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content</title>
+    <style>
+        .konten {
+            content: "Ini adalaha konten";
+        }
+
+        /* content bisa dirubah dengan text asalkan menggunakan pseudo-elements */
+        .konten::after {
+            content: " Rahman";
+        }
+        .konten::before {
+            content: "Saya ";
+        }
+    </style>
+</head>
+<body>
+    <p class="konten">Rizky</p>
+</body>
+</html>
